@@ -64,6 +64,7 @@ export default tseslint.config(
       ],
       "import/no-unresolved": "warn",
       "import/newline-after-import": "error",
+      "import/no-named-as-default": "off",
       "import/order": [
         "error",
         {
