@@ -1,6 +1,7 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle, ThemeProvider } from "styled-components";
 
 import { Router } from "@/app/router";
+import { theme } from "@/shared/theme";
 
 const GlobalStyle = createGlobalStyle`
     * {
@@ -13,10 +14,10 @@ const GlobalStyle = createGlobalStyle`
 
 const App = () => {
   return (
-    <>
+    <ThemeProvider theme={theme}>
       <Router/>
       <GlobalStyle/>
-    </>
+    </ThemeProvider>
   );
 };
 

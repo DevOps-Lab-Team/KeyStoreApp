@@ -4,7 +4,7 @@ import { theme } from "@/shared/theme";
 
 const LayoutWrapper = styled.div`
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 
