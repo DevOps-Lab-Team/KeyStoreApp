@@ -13,6 +13,7 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const App = () => {
+  console.log("App");
   return (
     <ThemeProvider theme={theme}>
       <Router/>
