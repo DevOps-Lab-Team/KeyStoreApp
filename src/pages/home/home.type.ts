@@ -1,4 +1,4 @@
-export type TGamePreview = {
+export type TGame = {
   id: string;
   name: string;
   img: string;

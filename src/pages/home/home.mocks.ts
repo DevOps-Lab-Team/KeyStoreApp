@@ -1,6 +1,6 @@
-import type { TGamePreview } from "./home.type.ts";
+import type { TGame } from "./home.type.ts";
 
-export const gamePreviewsMock: TGamePreview[] = [
+export const gamePreviewsMock: TGame[] = [
   {
     id: "0",
     img: "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/292030/header_russian.jpg?t=1736424367",

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { theme } from "@/shared/theme";
 
 const Container = styled.div`
   padding: 24px;
@@ -8,7 +9,7 @@ const Container = styled.div`
 `;
 
 const Title = styled.h1`
-  color: ${({ theme }) => theme.palette.gray[100]};
+  color: ${theme.palette.gray[100]};
   font-size: 32px;
   text-align: center;
 `;
