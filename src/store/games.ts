@@ -1,12 +1,14 @@
 import { makeAutoObservable } from "mobx";
-import type { TGame } from "../pages/home/home.type";
+
 import { gamesApi } from "../api/games";
 
-export class GameStore {
+import type { TGame } from "../pages/home/home.type";
+
+export class GamesStore {
   games: TGame[] = [];
   isLoading = false;
   error: string | null = null;
-  
+
   constructor() {
     makeAutoObservable(this);
   }
@@ -121,8 +123,14 @@ export class GameStore {
 
   // Сортировка игр по цене (локальная операция)
   sortGamesByPrice = (ascending: boolean = true) => {
-    return [...this.games].sort((a, b) => 
+    return [...this.games].sort((a, b) =>
       ascending ? a.price - b.price : b.price - a.price
     );
   };
-} 
+}
+
+export type TGamesStore = GamesStore;
+
+const instance = new GamesStore();
+
+export default instance;

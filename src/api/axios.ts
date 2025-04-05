@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // TODO add env variable
-export const API_URL = "http://localhost:3000/api";
+export const API_URL = "http://192.144.13.224:16874/";
 
 export const axiosInstance = axios.create({
   baseURL: API_URL,
@@ -21,4 +21,4 @@ axiosInstance.interceptors.response.use(
     }
     return Promise.reject(error);
   }
-); 
+);

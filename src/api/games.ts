@@ -1,10 +1,11 @@
 import { axiosInstance } from "./axios";
+
 import type { TGame } from "../pages/home/home.type";
 
 export const gamesApi = {
   // Получить все игры
   getGames: async () => {
-    const { data } = await axiosInstance.get<TGame[]>("/games");
+    const { data } = await axiosInstance.get<TGame[]>("/Game");
     return data;
   },
 
@@ -38,4 +39,4 @@ export const gamesApi = {
     });
     return data;
   }
-}; 
+};
