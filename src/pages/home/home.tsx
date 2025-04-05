@@ -14,6 +14,7 @@ const HomePage: FC = () => {
 
   useEffect(() => {
     fetchGames().then(() => console.log(games));
+    console.log("its worked");
   }, []);
 
   return (

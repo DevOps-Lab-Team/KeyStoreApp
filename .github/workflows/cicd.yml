@@ -2,10 +2,10 @@ name: CI/CD
 on:
   push:
     branches:
-      - main
+      - sftp-ci
   pull_request:
     branches:
-      - main
+      - sftp-ci
 
 jobs:
   test:
