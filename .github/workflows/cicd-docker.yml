@@ -1,4 +1,4 @@
-name: CI/CD - Docker
+name: keystore-frontend CI/CD
 on:
   push:
     branches:
