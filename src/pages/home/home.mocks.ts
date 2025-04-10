@@ -4,7 +4,7 @@ export const gamePreviewsMock: TGame[] = [
   {
     id: "0",
     img: "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/292030/header_russian.jpg?t=1736424367",
-    name: "Ведьмак 3 Дико срать охота",
+    name: "Ведьмак 3 Дикая охота",
     price: 699
   },
   {

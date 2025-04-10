@@ -12,7 +12,7 @@ const Header = () => {
 
   return (
     <S.HeaderWrapper>
-      <Link to="/home">
+      <Link to="/">
         <S.Logo>GameKeys</S.Logo>
       </Link>
 
