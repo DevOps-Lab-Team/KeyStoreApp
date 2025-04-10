@@ -13,6 +13,7 @@ const HomePage: FC = () => {
 
   useEffect(() => {
     fetchGames();
+    console.log("custom trigger");
   }, []);
 
   return (
