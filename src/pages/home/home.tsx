@@ -1,7 +1,8 @@
 import { observer } from "mobx-react-lite";
 import { useEffect } from "react";
 
-import gamesStore from "@/store/games";
+// TODO: change to own store
+import { gamesStore } from "@/pages/admin/games/store";
 
 import S from "./home.style.ts";
 import { GameCard } from "./components/gameCard";
